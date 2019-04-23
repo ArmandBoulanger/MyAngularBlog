@@ -1,0 +1,11 @@
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': post.loveIts > 0,
+                'list-group-item-danger': post.loveIts < 0}">
+  <div class="d-flex w-100 justify-content-between">
+    <h5>{{post.tittle}}</h5>
+    <p>{{post.createdAt | date: 'short' | uppercase}}</p>
+  </div>
+  <p>{{post.content}}</p>
+  <button type="button" class="btn btn-success" (click)="iLoveIt()">Love It!</button>
+  <button type="button" class="btn btn-danger" (click)="iDontLoveIt()">Don't love it</button>
+</li>

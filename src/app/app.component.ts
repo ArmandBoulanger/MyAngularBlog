@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {POST_MOCKED} from '../mocks/post.mock';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-blog';
+  postMocked = POST_MOCKED;
 }
